@@ -7,14 +7,6 @@ import (
 	"github.com/sjwhitworth/golearn/base"
 )
 
-// BinningFilter does equal-width binning for numeric
-// Attributes (aka "histogram binning")
-type BinningFilter struct {
-	AbstractDiscretizeFilter
-	bins    int
-	minVals map[base.Attribute]float64
-	maxVals map[base.Attribute]float64
-}
 
 // NewBinningFilter creates a BinningFilter structure
 // with some helpful default initialisations.
